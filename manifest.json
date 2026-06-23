@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-google",
-  "version": "1.0.0",
-  "description": "Comprehensive Google Workspace integration — Gmail, Calendar, Drive, Docs, Sheets, and Google News in one plugin",
+  "version": "1.0.1",
+  "description": "Comprehensive Google Workspace integration \u2014 Gmail, Calendar, Drive, Docs, Sheets, and Google News in one plugin",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -654,7 +654,11 @@
     "properties": {
       "google": {
         "type": "object",
-        "required": ["clientId", "clientSecret", "refreshToken"],
+        "required": [
+          "clientId",
+          "clientSecret",
+          "refreshToken"
+        ],
         "properties": {
           "clientId": {
             "type": "string",
@@ -687,10 +691,12 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "cortex": ">=1.0.0"
+    "cortex": ">=0.51.0"
   },
   "aiDisclosure": {
-    "tools": ["copilot"],
+    "tools": [
+      "copilot"
+    ],
     "generatedFiles": [
       "mod.ts",
       "auth.ts",
